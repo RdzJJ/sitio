@@ -8,11 +8,15 @@ body {
 
 /* Estilo del Header */
 header {
+    position: sticky;
+    top: 1px;
     background-color: white;
     color: #9ca3af;
-    padding: 20px 0;
+    padding: 2.5px 0;
     border-bottom: 1px solid #ddd;
 }
+
+
 
 /* Contenedor General */
 .container {
