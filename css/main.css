@@ -16,6 +16,43 @@ header {
     border-bottom: 1px solid #ddd;
 }
 
+.hero {
+    background-color: #BDB8B8;
+    color: #000;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #ccc;
+}
+
 
 
 /* Contenedor General */
