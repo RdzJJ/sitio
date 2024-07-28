@@ -127,7 +127,7 @@ header {
 }
 
 .gallery-item {
-    background-color: #ddd;
+    background-color: #A7A2A2;
     padding: 20px;
     margin: 10px;
     flex: 1 1 calc(25% - 40px);
@@ -135,15 +135,57 @@ header {
     text-align: center;
 }
 
-/* Seccion About */
-.about {
-    padding: 50px 20px;
-    text-align: center;
+/* Estilo para la línea divisora */
+.divider {
+    border: none;
+    height: 100px;
+    background-color: #A7A2A2;
+    margin: 50px 0;
 }
 
-.about h2 {
-    font-size: 28px;
+/* Seccion About */
+.about-section {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.about-video {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.about-text {
+    flex: 1;
+    text-align: left;
+}
+
+.about-text h2 {
+    font-size: 2em;
     margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.2em;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-video {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
 }
 
 /* Seccion Contacto */
