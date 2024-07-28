@@ -16,6 +16,42 @@ header {
     border-bottom: 1px solid #ddd;
 }
 
+/* Contenedor General */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navegacion */
+.nav-left, .nav-right {
+    display: flex;
+}
+
+.nav-left span, .nav-right span {
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.nav-left span:hover, .nav-right span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
 .hero {
     background-color: #BDB8B8;
     color: #000;
@@ -83,75 +119,68 @@ header {
     font-size: 1.2em;
 }
 
-
-/* Contenedor General */
-.container {
+/* Seccion de Galeria */
+.gallery {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-/* Navegacion */
-.nav-left, .nav-right {
-    display: flex;
-}
-
-.nav-left span, .nav-right span {
-    margin: 0 15px;
-    font-size: 18px;
-}
-
-.nav-left span:hover, .nav-right span:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-/* Logo */
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    height: 40px;
-    margin-right: 10px;
-}
-
-section {
+.gallery-item {
+    background-color: #ddd;
     padding: 20px;
+    margin: 10px;
+    flex: 1 1 calc(25% - 40px);
+    box-sizing: border-box;
     text-align: center;
 }
 
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+/* Seccion About */
+.about {
+    padding: 50px 20px;
+    text-align: center;
 }
 
-.gallery img {
-    margin: 10px;
-    max-width: 100%;
-    height: auto;
+.about h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
+/* Seccion Contacto */
+.contact {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Seccion Formulario */
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+form div {
+    margin-bottom: 15px;
+    width: 80%;
+    max-width: 500px;
+}
+
 form label {
-    margin: 5px 0;
+    display: block;
+    margin-bottom: 5px;
 }
 
 form input, form textarea {
-    width: 80%;
-    max-width: 500px;
+    width: 100%;
     padding: 10px;
-    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 form button {
@@ -166,45 +195,81 @@ form button:hover {
     background-color: #555;
 }
 
+/* Seccion Footer */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el botón de WhatsApp */
+#menu_redes {
     position: fixed;
-    bottom: 0;
-    width: 100%;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu_redes img {
+    width: 40px;
+    height: 40px;
 }
 
 /* Responsivo */
 @media (max-width: 600px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .gallery {
+    .nav-left, .nav-right {
         flex-direction: column;
     }
 
-    form input, form textarea {
+    .nav-left span, .nav-right span {
+        margin: 10px 0;
+    }
+
+    .gallery-item {
+        flex: 1 1 100%;
+    }
+
+    form div {
         width: 100%;
+    }
+
+    .hero-content {
+        flex-direction: column;
+    }
+
+    .hero-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-top: 20px;
     }
 }
 
-.input{
+.input {
     border: none;
     background: none;
-    border-bottom: 3px rgb(255, 0, 0) solid;
-}
-
-#menu_redes{
-    position:fixed;
-    background-color:lightskyblue;
-    width:100px;
-    text-align:center;
-    top:0px;
-    right:0px;
-    border-radius:0px 0px 0px 20px;
-    height: 30px;
+    border-bottom: 3px solid rgb(0, 0, 0);
 }

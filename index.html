@@ -29,18 +29,18 @@
         </div>
     </header>
 
-        <!-- Seccion de Inicio -->
-        <section class="hero">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Fotografía Profesional</h1>
-                    <p>Bienvenidos a nuestro mundo a través del lente. Somos Julian y Mariana, y aquí encontrarás una colección de nuestros trabajos fotográficos más significativos. Capturamos momentos y emociones únicas, congelando fragmentos de tiempo para siempre. Explora nuestro portafolio y descubre la belleza en lo cotidiano y lo extraordinario.</p>
-                </div>
-                <div class="hero-image">
-                    <img src="/mnt/data/image.png" alt="Fotografía Ejemplo">
-                </div>
+    <!-- Seccion de Inicio -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Fotografía Profesional</h1>
+                <p>Bienvenidos a nuestro mundo a través del lente. Somos Julian y Mariana, y aquí encontrarás una colección de nuestros trabajos fotográficos más significativos. Capturamos momentos y emociones únicas, congelando fragmentos de tiempo para siempre. Explora nuestro portafolio y descubre la belleza en lo cotidiano y lo extraordinario.</p>
             </div>
-        </section>
+            <div class="hero-image">
+                <img src="/mnt/data/image.png" alt="Fotografía Ejemplo">
+            </div>
+        </div>
+    </section>
 
     <!-- Seccion del Portafolio -->
     <div class="portfolio-section">
@@ -62,30 +62,43 @@
             <div class="portfolio-text">Experimental</div>
         </div>
     </div>
+    
+    <!-- Seccion Nosotros -->
+    <section class="about">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos Julian y Mariana, apasionados por la fotografía. A través de nuestras cámaras, capturamos momentos únicos y emociones que cuentan historias. Nos especializamos en retratos, paisajes y fotografía urbana. Siempre en busca de nuevas historias y conectarnos con las personas a través de nuestras imágenes.</p>
+    </section>
 
-    <section id="contact">
-        <h2>Contacto</h2>
+    <!--Seccion Contacto -->
+    <section class="contact">
+        <h2>Contactos</h2>
         <form id="contactForm">
-            <label for="name">Nombre:</label>
-            <input class="input" type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input class="input" type="email" id="email" name="email" required>
-
-            <label for="message">Mensaje:</label>
-            <textarea class="input" id="message" name="message" required></textarea>
-
+            <div>
+                <label for="name">Nombre:</label>
+                <input class="input" type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Correo:</label>
+                <input class="input" type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="message">Escriba un mensaje:</label>
+                <textarea class="input" id="message" name="message" required></textarea>
+            </div>
             <button type="submit">Enviar</button>
         </form>
     </section>
 
+    <!-- Boton de Whatsapp -->
     <div id="menu_redes">
         <a class="whatsapp" aria-label="Chat on WhatsApp" href="https://wa.me/3145203021"><img alt="Chat on WhatsApp" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png" />
-            </a>
+        </a>
     </div>
 
+    <!-- Seccion del Footer-->
     <footer>
-        <p>&copy; 2024 Fotografía Profesional. Todos los derechos reservados.</p>
+        <p>&copy; 2024 VisualVerse. Todos los derechos reservados.</p>
+        <p><a href="#">Política de privacidad</a> | <a href="#">Términos y condiciones</a></p>
     </footer>
 
     <script src="/js/main.js"></script>
