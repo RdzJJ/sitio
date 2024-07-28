@@ -53,6 +53,35 @@ header {
     border: 5px solid #ccc;
 }
 
+/* Sección del Portafolio */
+.portfolio-section {
+    text-align: center;
+}
+
+.portfolio-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.portfolio-item {
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.portfolio-item img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.portfolio-text {
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
 
 
 /* Contenedor General */
