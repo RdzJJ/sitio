@@ -6,26 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FotoClick</title>
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="icon" href="imagenes/logo1.png">
+    <link rel="icon" href="imagenes/logo1.jpg">
 </head>
 
 <body>
 
     <!-- Sección del Header -->
     <header>
+        
         <div class="container">
-            <div class="nav-left">
-                <span>Inicio</span>
-                <span>Portafolio</span>
-                <span>Nosotros</span>
-            </div>
             <div class="logo">
-                <img src="imagenes/logo1.png" alt="logo">
+                <img src="imagenes/logo1.jpg" alt="logo">
                 <h1>FotoClick</h1>
             </div>
-            <div class="nav-right">
-                <span>Contacto</span>
-                <span>Redes</span>
+            <div class="nav">
+                <nav>
+                    <ul>
+                      <li><button>Inicio</button></li>
+                      <li><button>Portafolio</button></li>
+                      <li><button>Nosotros</button></li>
+                      <li><button>Contacto</button></li>
+                      <li><button>Redes</button></li>
+                    </ul>
+                  </nav>
+                  
             </div>
         </div>
     </header>
@@ -42,10 +46,10 @@
             </div>
             <div class="carousel">
                 <div class="carousel-imagenes">
-                    <img src="imagenes/logo1.png" alt="imagen1">
-                    <img src="imagenes/thumb.jpg" alt="imagen2">
-                    <img src="" alt="imagen3">
-                    <img src="" alt="imagen4">
+                    <img src="imagenes/20240126_054733.jpg" alt="imagen 1">
+                    <img src="imagenes/20240126_055403.jpg" alt="imagen 2">
+                    <img src="imagenes/IMG_1418.JPG" alt="imagen 3">
+                    <img src="imagenes/IMG_1507.JPG" alt="imagen 4">
                 </div>
                 <button class="prev" onclick="prevImage()">&lt;</button>
                 <button class="next" onclick="nextImage()">&gt;</button>
@@ -56,22 +60,48 @@
     <!-- Sección del Portafolio -->
     <section class="portfolio-section">
         <h2>Portafolio</h2>
-        <div class="portfolio-item">
-            <img src="ruta/a/imagen-retratos.jpg" alt="Retratos">
-            <div class="portfolio-text">Retratos</div>
-        </div>
-        <div class="portfolio-item">
-            <img src="ruta/a/imagen-naturaleza.jpg" alt="Naturaleza">
-            <div class="portfolio-text">Naturaleza</div>
-        </div>
-        <div class="portfolio-item">
-            <img src="ruta/a/imagen-urbano.jpg" alt="Urbano">
-            <div class="portfolio-text">Urbano</div>
-        </div>
-        <div class="portfolio-item">
-            <img src="ruta/a/imagen-experimental.jpg" alt="Experimental">
-            <div class="portfolio-text">Experimental</div>
-        </div>
+        <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
+            <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg" 
+              data-pswp-width="1669" 
+              data-pswp-height="2500" 
+              target="_blank">
+              <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg" alt="" />
+            </a>
+            <!-- cropped thumbnail: -->
+            <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/7/img-2500.jpg" 
+              data-pswp-width="1875" 
+              data-pswp-height="2500" 
+              data-cropped="true" 
+              target="_blank">
+              <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/7/img-200.jpg" alt="" />
+              Cropped
+            </a>
+            <!-- data-pswp-src with custom URL in href -->
+            <a href="https://unsplash.com" 
+              data-pswp-src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg"
+              data-pswp-width="2500" 
+              data-pswp-height="1666" 
+              target="_blank">
+              <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg" alt="" />
+            </a>
+            <!-- Without thumbnail: -->
+            <a href="http://example.com" 
+              data-pswp-src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/5/img-2500.jpg"
+              data-pswp-width="2500" 
+              data-pswp-height="1668" 
+              target="_blank">
+              No thumbnail
+            </a>
+            <!-- wrapped with any element: -->
+            <div>
+              <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-2500.jpg"
+                data-pswp-width="2500" 
+                data-pswp-height="1667" 
+                target="_blank">
+                <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-200.jpg" alt="" />
+              </a>
+            </div>
+          </div>
     </section>
 
     <!-- Línea divisora -->
@@ -114,7 +144,7 @@
             <button class="bt_enviar" type="submit">Enviar</button>
         </form>
     </section>
-
+ 
     <!-- Botón de WhatsApp -->
     <div id="menu_redes">
         <a class="whatsapp" aria-label="Chat on WhatsApp" href="https://wa.me/3145203021">
