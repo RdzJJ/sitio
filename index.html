@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VisualVerse</title>
+    <title>FotoClick</title>
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" href="imagenes/logo1.png">
 </head>
 
 <body>
 
-    <!-- Seccion del Header-->
+    <!-- Sección del Header -->
     <header>
         <div class="container">
             <div class="nav-left">
@@ -19,8 +20,8 @@
                 <span>Nosotros</span>
             </div>
             <div class="logo">
-                <img src="logo.png" alt="logo">
-                <span>Logo</span>
+                <img src="imagenes/logo1.png" alt="logo">
+                <h1>FotoClick</h1>
             </div>
             <div class="nav-right">
                 <span>Contacto</span>
@@ -29,47 +30,54 @@
         </div>
     </header>
 
-    <!-- Seccion de Inicio -->
+    <!-- Sección de Inicio -->
     <section class="hero">
         <div class="hero-content">
             <div class="hero-text">
                 <h1>Fotografía Profesional</h1>
-                <p>Bienvenidos a nuestro mundo a través del lente. Somos Julian y Mariana, y aquí encontrarás una
+                <p>Bienvenidos a nuestro mundo a través del lente. Somos Julián y Mariana, y aquí encontrarás una
                     colección de nuestros trabajos fotográficos más significativos. Capturamos momentos y emociones
                     únicas, congelando fragmentos de tiempo para siempre. Explora nuestro portafolio y descubre la
                     belleza en lo cotidiano y lo extraordinario.</p>
             </div>
-            <div class="hero-image">
-                <img src="/mnt/data/image.png" alt="Fotografía Ejemplo">
+            <div class="carousel">
+                <div class="carousel-imagenes">
+                    <img src="imagenes/logo1.png" alt="imagen1">
+                    <img src="imagenes/thumb.jpg" alt="imagen2">
+                    <img src="" alt="imagen3">
+                    <img src="" alt="imagen4">
+                </div>
+                <button class="prev" onclick="prevImage()">&lt;</button>
+                <button class="next" onclick="nextImage()">&gt;</button>
             </div>
         </div>
     </section>
 
-    <!-- Seccion del Portafolio -->
-    <div class="portfolio-section">
+    <!-- Sección del Portafolio -->
+    <section class="portfolio-section">
         <h2>Portafolio</h2>
-        <div class="portfolio-item"> <!-- Slider 1 -->
+        <div class="portfolio-item">
             <img src="ruta/a/imagen-retratos.jpg" alt="Retratos">
             <div class="portfolio-text">Retratos</div>
         </div>
-        <div class="portfolio-item"> <!-- Slider 2 -->
+        <div class="portfolio-item">
             <img src="ruta/a/imagen-naturaleza.jpg" alt="Naturaleza">
             <div class="portfolio-text">Naturaleza</div>
         </div>
-        <div class="portfolio-item"> <!-- Slider 3 -->
+        <div class="portfolio-item">
             <img src="ruta/a/imagen-urbano.jpg" alt="Urbano">
             <div class="portfolio-text">Urbano</div>
         </div>
-        <div class="portfolio-item"> <!-- Slider 4 -->
+        <div class="portfolio-item">
             <img src="ruta/a/imagen-experimental.jpg" alt="Experimental">
             <div class="portfolio-text">Experimental</div>
         </div>
-    </div>
+    </section>
 
     <!-- Línea divisora -->
     <hr class="divider">
 
-    <!-- Seccion Nosotros -->
+    <!-- Sección Nosotros -->
     <section class="about-section">
         <div class="about-container">
             <div class="about-video">
@@ -87,7 +95,7 @@
         </div>
     </section>
 
-    <!--Seccion Contacto -->
+    <!-- Sección Contacto -->
     <section class="contact">
         <h2>Contactos</h2>
         <form id="contactForm">
@@ -103,25 +111,24 @@
                 <label for="message">Escriba un mensaje:</label>
                 <textarea class="input" id="message" name="message" required></textarea>
             </div>
-            <button type="submit">Enviar</button>
+            <button class="bt_enviar" type="submit">Enviar</button>
         </form>
     </section>
 
-    <!-- Boton de Whatsapp -->
+    <!-- Botón de WhatsApp -->
     <div id="menu_redes">
-        <a class="whatsapp" aria-label="Chat on WhatsApp" href="https://wa.me/3145203021"><img alt="Chat on WhatsApp"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png" />
+        <a class="whatsapp" aria-label="Chat on WhatsApp" href="https://wa.me/3145203021">
+            <img alt="Chat on WhatsApp" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png" />
         </a>
     </div>
 
-    <!-- Seccion del Footer-->
+    <!-- Sección del Footer -->
     <footer>
-        <p>&copy; 2024 VisualVerse. Todos los derechos reservados.</p>
+        <p>&copy; 2024 FotoClick. Todos los derechos reservados.</p>
         <p><a href="#">Política de privacidad</a> | <a href="#">Términos y condiciones</a></p>
     </footer>
 
     <script src="/js/main.js"></script>
-
 </body>
 
 </html>

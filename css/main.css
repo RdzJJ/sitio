@@ -9,11 +9,12 @@ body {
 /* Estilo del Header */
 header {
     position: sticky;
-    top: 1px;
+    top: 0;
     background-color: white;
     color: #9ca3af;
-    padding: 2.5px 0;
+    padding: 10px 0;
     border-bottom: 1px solid #ddd;
+    z-index: 1000; /* Asegura que el header se mantenga arriba */
 }
 
 /* Contenedor General */
@@ -24,6 +25,51 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+/* Rotador de Imágenes */
+.carousel {
+    position: relative;
+    max-width: 600px;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin: 20px auto; /* Centrado y margen superior/inferior */
+}
+
+.carousel-imagenes {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-imagenes img {
+    width: 100%;
+    height: auto;
+}
+
+/* Botones de Navegación del Rotador */
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Navegacion */
@@ -83,6 +129,10 @@ header {
     font-size: 18px;
 }
 
+.carousel {
+    margin-left: 20px; /* Espaciado entre el texto y el carrusel */
+}
+
 .hero-image img {
     max-width: 100%;
     height: auto;
@@ -119,7 +169,7 @@ header {
     font-size: 1.2em;
 }
 
-/* Seccion de Galeria */
+/* Sección de Galería */
 .gallery {
     display: flex;
     justify-content: space-around;
@@ -143,7 +193,7 @@ header {
     margin: 50px 0;
 }
 
-/* Seccion About */
+/* Sección About */
 .about-section {
     padding: 50px 20px;
     display: flex;
@@ -188,7 +238,7 @@ header {
     }
 }
 
-/* Seccion Contacto */
+/* Sección Contacto */
 .contact {
     background-color: #f4f4f4;
     padding: 50px 20px;
@@ -200,7 +250,7 @@ header {
     margin-bottom: 20px;
 }
 
-/* Seccion Formulario */
+/* Sección Formulario */
 form {
     display: flex;
     flex-direction: column;
@@ -237,7 +287,7 @@ form button:hover {
     background-color: #555;
 }
 
-/* Seccion Footer */
+/* Sección Footer */
 footer {
     background-color: #333;
     color: white;
