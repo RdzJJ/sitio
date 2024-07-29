@@ -143,50 +143,46 @@ nav {
     text-align: justify;
 }
 
-/* Sección del Portafolio */
-.portfolio-section {
+/* Galería de imágenes */
+h2 {
     text-align: center;
 }
 
-.portfolio-section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.portfolio-item {
-    display: inline-block;
-    margin: 0 10px;
-    text-align: center;
-}
-
-.portfolio-item img {
-    width: 200px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-.portfolio-text {
-    background-color: #e0e0e0;
-    padding: 10px;
-    margin-top: 10px;
-    font-size: 1.2em;
-}
-
-/* Sección de Galería */
-.gallery {
+.gallery-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
-.gallery-item {
-    background-color: #A7A2A2;
-    padding: 20px;
+div.gallery {
     margin: 10px;
-    flex: 1 1 calc(25% - 40px);
-    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgb(107, 118, 125), 0 6px 20px 0 rgba(0,0,0,0.19);
+    width: 250px;
+    transition: transform 0.3s;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.gallery:hover {
+    border: 1px solid rgb(53, 53, 53);
+    transform: rotateX(10deg) translateY(-10px);
+}
+
+div.text-gallery {
     text-align: center;
+    padding: 10px;
+}
+
+
+
+/* Línea divisora */
+.divider {
+    border: none;
+    border-top: 1px solid #9ca3af;
+    margin: 40px 0;
 }
 
 /* Estilo para la línea divisora */
