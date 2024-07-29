@@ -21,10 +21,12 @@ https://developer.mozilla.org/es/docs/Web/CSS/position
 
 - Video Embebido
 https://www.youtube.com/watch?v=iReoQzBaRhs&ab_channel=DropCoding
+https://www.youtube.com/watch?v=ptc4Awb0UpU&ab_channel=KikoPalomares
 
 - Galeria de imagenes
 https://photoswipe.com/
 https://www.youtube.com/watch?v=HJbXA7JAxLk&ab_channel=OscarTenorio 
+https://www.youtube.com/watch?v=fOkuDuABAVI&ab_channel=SLeeDw
 
 - Slider
 https://codepen.io/xaca/pen/XWmQqwV

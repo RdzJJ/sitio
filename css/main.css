@@ -181,15 +181,15 @@ div.text-gallery {
 /* Línea divisora */
 .divider {
     border: none;
-    border-top: 1px solid #9ca3af;
+    border-top: 1px solid #ffffff;
     margin: 40px 0;
 }
 
 /* Estilo para la línea divisora */
 .divider {
     border: none;
-    height: 100px;
-    background-color: #A7A2A2;
+    height: 5px;
+    background-color: #ffffff;
     margin: 50px 0;
 }
 
@@ -199,6 +199,7 @@ div.text-gallery {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #9ca3af;
 }
 
 .about-container {
@@ -240,7 +241,7 @@ div.text-gallery {
 
 /* Sección Contacto */
 .contact {
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     padding: 50px 20px;
     text-align: center;
 }
@@ -289,7 +290,7 @@ form button:hover {
 
 /* Sección Footer */
 footer {
-    background-color: #333;
+    background-color: #000000;
     color: white;
     text-align: center;
     padding: 20px 0;
