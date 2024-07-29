@@ -13,7 +13,7 @@ header {
     background-color: #000000;
     color: white;
     padding: 10px 0;
-    border-bottom: 2px solid white;
+    /*border-bottom: 2px solid white;*/
     z-index: 1000; /* Asegura que el header se mantenga arriba */
     height: 70px;
 }
@@ -34,7 +34,7 @@ header {
     max-width: 350px;
     overflow: hidden;
     border: 2px solid #ddd;
-    border-radius: 30px;
+    /*border-radius: 30px;*/
     margin:auto auto; /* Centrado y margen superior/inferior */
 }
 
@@ -369,3 +369,4 @@ footer a:hover {
     background: none;
     border-bottom: 3px solid rgb(0, 0, 0);
 }
+

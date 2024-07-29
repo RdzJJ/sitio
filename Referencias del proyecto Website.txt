@@ -1,7 +1,37 @@
 Referencias del proyecto Website
 
-Icono: https://www.youtube.com/watch?v=-CrnK3O01dU&ab_channel=InformaticaStudios
-Boton Whatsapp: https://faq.whatsapp.com/5913398998672934/?locale=es_LA
+
+- Icono
+https://www.youtube.com/watch?v=-CrnK3O01dU&ab_channel=InformaticaStudios
+
+- Boton Whatsapp sticky
+https://faq.whatsapp.com/5913398998672934/?locale=es_LA
 https://codepen.io/xaca/pen/jOmJgqE
-pagina responsive: https://codepen.io/xaca/pen/QWVOzqa
-Sticky menú: https://codepen.io/xaca/pen/qBQXMBg
+https://www.youtube.com/watch?v=dL6K3UjWgDA&ab_channel=Visualmex
+https://www.espai.es/blog/2021/12/como-agregar-un-boton-whatsapp-clic-para-chatear-a-tu-website-con-html-y-css/
+https://codepen.io/gabrielchavezme/pen/oMyaaZ
+https://ayuda.3pod.io/constructor-de-paginas-web-embudos/como-agregar-boton-flotante-de-whatsapp/
+
+- Pagina responsive
+https://codepen.io/xaca/pen/QWVOzqa
+
+- Sticky menu
+https://codepen.io/xaca/pen/qBQXMBg
+https://developer.mozilla.org/es/docs/Web/CSS/position
+
+- Video Embebido
+https://www.youtube.com/watch?v=iReoQzBaRhs&ab_channel=DropCoding
+
+- Galeria de imagenes
+https://photoswipe.com/
+
+- Slider
+https://codepen.io/xaca/pen/XWmQqwV
+
+- Cambio de idioma
+
+- Mediaqueries
+https://codepen.io/xaca/pen/QWVOzqa
+https://www.freecodecamp.org/espanol/news/ejemplo-css-media-query-ancho-de-pantalla-max-y-min-para-diseno-adaptable-en-movil/
+https://kinsta.com/es/blog/diseno-de-paginas-web-sensibles/
+https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
