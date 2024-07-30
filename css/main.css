@@ -208,6 +208,8 @@ div.text-gallery {
 .about-video {
     flex: 1;
     padding-right: 20px;
+    max-width: 100%; /* Asegura que el video no se salga del contenedor */
+    box-sizing: border-box;
 }
 
 .about-text {
@@ -228,6 +230,7 @@ div.text-gallery {
 @media (max-width: 768px) {
     .about-container {
         flex-direction: column;
+        align-items: center; /* Centra el contenido */
     }
 
     .about-video {
@@ -363,6 +366,11 @@ footer a:hover {
 
     .hero-text p {
         font-size: 16px;
+    }
+
+    .about-video {
+        max-width: 100%;
+        box-sizing: border-box;
     }
 }
 
