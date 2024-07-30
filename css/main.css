@@ -13,7 +13,6 @@ header {
     background-color: #000000;
     color: white;
     padding: 10px 0;
-    /*border-bottom: 2px solid white;*/
     z-index: 1000; /* Asegura que el header se mantenga arriba */
     height: 70px;
 }
@@ -31,11 +30,10 @@ header {
 /* Rotador de Imágenes */
 .carousel {
     position: relative;
-    max-width: 350px;
+    max-width: 50%; /* Cambiar el ancho para ajustar al lado derecho */
     overflow: hidden;
     border: 2px solid #ddd;
-    /*border-radius: 30px;*/
-    margin:auto auto; /* Centrado y margen superior/inferior */
+    margin: auto; /* Centrado y margen superior/inferior */
 }
 
 .carousel-imagenes {
@@ -80,24 +78,22 @@ button:hover {
 nav {
     display: flex;
     justify-content: center;
-    
-  }
-  
-  nav ul {
+}
+
+nav ul {
     list-style: none;
     display: flex;
-  }
-  
-  nav ul li {
+}
+
+nav ul li {
     margin: 0 10px;
     height: auto;
-  }
+}
 
-  nav ul li button{
+nav ul li button {
     background-color: white;
     height: 50px;
-  }
-  
+}
 
 /* Logo */
 .logo {
@@ -118,28 +114,31 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 400px;
+    min-height: 400px;
 }
 
 .hero-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     max-width: 1200px;
     width: 100%;
 }
 
 .hero-text {
-    max-width: 50%;
+    max-width: 45%; /* Cambiar el ancho para ajustar al lado izquierdo */
+    text-align: center; /* Centrando el texto */
+    margin-right: auto; /* Empujar hacia la izquierda */
+    margin-right: 30px; /* Agregar margen derecho para espacio adicional */
 }
 
 .hero-text h1 {
-    font-size: 48px;
+    font-size: 32px;
     margin-bottom: 20px;
 }
 
 .hero-text p {
-    font-size: 20px;
+    font-size: 18px;
     text-align: justify;
 }
 
@@ -175,8 +174,6 @@ div.text-gallery {
     text-align: center;
     padding: 10px;
 }
-
-
 
 /* Línea divisora */
 .divider {
@@ -359,6 +356,14 @@ footer a:hover {
     .hero-image {
         margin-top: 20px;
     }
+
+    .hero-text h1 {
+        font-size: 24px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
 }
 
 .input {
@@ -366,4 +371,3 @@ footer a:hover {
     background: none;
     border-bottom: 3px solid rgb(0, 0, 0);
 }
-
