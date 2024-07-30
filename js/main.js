@@ -1,28 +1,24 @@
-let currentIndex = 0;
-const images = document.querySelectorAll('.carousel-imagenes img');
-const totalImages = images.length;
+const carouselImages = document.querySelector('.carousel-images');
+const images = document.querySelectorAll('.carousel-images img');
+const prevButton = document.querySelector('.prev');
+const nextButton = document.querySelector('.next');
+
+let index = 0;
 
 function showImage(index) {
-    const carouselImages = document.querySelector('.carousel-imagenes');
-    if (index >= totalImages) {
-        currentIndex = 0;
-    } else if (index < 0) {
-        currentIndex = totalImages - 1;
-    } else {
-        currentIndex = index;
-    }
-    const offset = -currentIndex * 100;
-    carouselImages.style.transform = `translateX(${offset}%)`;
+    const width = images[0].clientWidth;
+    carouselImages.style.transform = `translateX(${-index * width}px)`;
 }
 
-function nextImage() {
-    showImage(currentIndex + 1);
-}
-
-function prevImage() {
-    showImage(currentIndex - 1);
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    setInterval(nextImage, 5000); // Cambia la imagen cada 5 segundos
+prevButton.addEventListener('click', () => {
+    index = (index > 0) ? index - 1 : images.length - 1;
+    showImage(index);
 });
+
+nextButton.addEventListener('click', () => {
+    index = (index < images.length - 1) ? index + 1 : 0;
+    showImage(index);
+});
+
+// Ajustar el tamaño al cambiar el tamaño de la ventana
+window.addEventListener('resize', () => showImage(index));

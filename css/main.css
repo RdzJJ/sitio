@@ -13,7 +13,6 @@ header {
     background-color: #000000;
     color: white;
     padding: 10px 0;
-    /*border-bottom: 2px solid white;*/
     z-index: 1000; /* Asegura que el header se mantenga arriba */
     height: 70px;
 }
@@ -28,14 +27,61 @@ header {
     padding: 0 20px;
 }
 
+/* Estilo del Logo y Título */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px; /* Ajusta la altura según sea necesario */
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.logo h1 {
+    font-size: 24px; /* Ajusta el tamaño del texto según sea necesario */
+    margin: 0;
+}
+
+/* Navegación */
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0 2rem;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 4rem;
+}
+
+nav ul li button {
+    background-color: #ffffff; /* Fondo blanco */
+    color: #000000; /* Texto negro */
+    border: 1px solid #ccc; /* Borde gris claro */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Manita en el cursor */
+}
+
+nav ul li button:hover {
+    background-color: #f0f0f0; /* Fondo gris claro al pasar el ratón */
+}
 /* Rotador de Imágenes */
 .carousel {
     position: relative;
-    max-width: 350px;
+    width: 600px;
     overflow: hidden;
     border: 2px solid #ddd;
     /*border-radius: 30px;*/
     margin:auto auto; /* Centrado y margen superior/inferior */
+    display: flex;
 }
 
 .carousel-imagenes {
@@ -76,41 +122,6 @@ button:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Navegacion */
-nav {
-    display: flex;
-    justify-content: center;
-    
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-  }
-  
-  nav ul li {
-    margin: 0 10px;
-    height: auto;
-  }
-
-  nav ul li button{
-    background-color: white;
-    height: 50px;
-  }
-  
-
-/* Logo */
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    height: 100px;
-    margin-right: 10px;
-    border-radius: 50%;
-}
-
 .hero {
     background-color: #9ca3af;
     color: #000;
@@ -141,6 +152,7 @@ nav {
 .hero-text p {
     font-size: 20px;
     text-align: justify;
+    margin-right: 5rem;
 }
 
 /* Sección del Portafolio */
@@ -240,6 +252,27 @@ nav {
         padding-right: 0;
         margin-bottom: 20px;
     }
+
+    @media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav {
+        width: 100%;
+        justify-content: center;
+    }
+
+    nav ul {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+}
 }
 
 /* Sección Contacto */
@@ -370,3 +403,41 @@ footer a:hover {
     border-bottom: 3px solid rgb(0, 0, 0);
 }
 
+.carousel {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
