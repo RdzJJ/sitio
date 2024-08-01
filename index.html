@@ -13,7 +13,6 @@
 
     <!-- Sección del Header -->
     <header>
-
         <div class="container">
             <div class="logo">
                 <img src="imagenes/logo1.jpg" alt="logo">
@@ -22,20 +21,19 @@
             <div class="nav">
                 <nav>
                     <ul>
-                        <li><button>Inicio</button></li>
-                        <li><button>Portafolio</button></li>
-                        <li><button>Nosotros</button></li>
-                        <li><button>Contacto</button></li>
-                        <li><button>Redes</button></li>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#portafolio">Portafolio</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="https://wa.me/3145203021">Redes</a></li>
                     </ul>
                 </nav>
-
             </div>
         </div>
     </header>
 
     <!-- Sección de Inicio -->
-    <section class="hero">
+    <section id="inicio" class="hero">
         <div class="hero-content">
             <div class="hero-text">
                 <h1>Fotografía Profesional</h1>
@@ -57,8 +55,13 @@
         </div>
     </section>
 
+    <!-- Línea Divisora -->
+    <div class="decorative-divider">
+        <hr class="divider">
+    </div>
+
     <!-- Sección del Portafolio -->
-    <section class="portfolio-section">
+    <section id="portafolio" class="portfolio-section">
         <h2>Portafolio</h2>
         <div class="gallery-container">
             <div class="gallery">
@@ -96,20 +99,17 @@
         </div>
     </section>
 
-
-
-    <!-- Línea divisora -->
+    <!-- Línea Divisora -->
     <hr class="divider">
 
-
     <!-- Sección Nosotros -->
-    <section class="about-section">
+    <section id="nosotros" class="about-section">
         <div class="about-container">
             <div class="about-video">
                 <iframe width="560" height="315"
                     src="https://www.youtube.com/embed/AuKR2fQbMBk?autoplay=1&loop=1&playlist=AuKR2fQbMBk&controls=0"
                     title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <div class="about-text">
@@ -123,7 +123,7 @@
     </section>
 
     <!-- Sección Contacto -->
-    <section class="contact">
+    <section id="contacto" class="contact">
         <h2>Contactos</h2>
         <form id="contactForm">
             <div>
