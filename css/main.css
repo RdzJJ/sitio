@@ -140,6 +140,7 @@ nav ul li a:hover {
     margin-right: 30px;
     border: 1px solid #000; /* Línea alrededor del área de texto */
     padding: 20px;
+    background-color: antiquewhite;
 }
 
 /* Galería de Imágenes */

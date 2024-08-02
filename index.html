@@ -11,6 +11,14 @@
     <script src="https://unpkg.com/i18next-browser-languagedetector@latest/dist/umd/i18nextBrowserLanguageDetector.min.js"></script>
     <script type="module" src="js/i18n.js" defer></script>
     <script type="module" src="js/idioma.js"  defer></script> -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en, es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
+                }
+        </script>
+        
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </head>
 
 <body>
@@ -31,8 +39,9 @@
                         <li><a href="#contacto" id="contact">Contacto</a></li>
                         <li><a href="https://wa.me/3145203021" id="networks">Redes</a></li>
                         |
-                        <li><a href="javascript:void(0);" id="en" id="btn_en">EN</a></li>
-                        <li><a href="javascript:void(0);" id="es" id="btn_es">ES</a></li>
+                        <!-- <li><a href="javascript:void(0);" id="en" id="btn_en">EN</a></li>
+                        <li><a href="javascript:void(0);" id="es" id="btn_es">ES</a></li> -->
+                        <li><div id="google_translate_element" class="google"></div></li>
                     </ul>
                 </nav>
             </div>
