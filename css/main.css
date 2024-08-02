@@ -111,53 +111,6 @@ nav ul li a:hover {
 }
 
 
-/* Rotador de Imágenes */
-.carousel {
-    position: relative;
-    max-width: 50%;
-    overflow: hidden;
-    border: 2px solid #ddd;
-    margin: auto;
-}
-
-.carousel-imagenes {
-    width: 100%;
-    display: flex;
-    transition: transform 0.5s ease;
-    object-fit: cover;
-}
-
-.carousel-imagenes img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-/* Botones de Navegación del Rotador */
-button.prev, button.next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 10;
-    border-radius: 50%;
-}
-
-button.prev {
-    left: 10px;
-}
-
-button.next {
-    right: 10px;
-}
-
-button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
 
 /* Sección Hero */
 .hero {
@@ -184,14 +137,55 @@ button:hover {
     margin-right: 30px;
     border: 1px solid #000; /* Línea alrededor del área de texto */
     padding: 20px;
-    background-color: antiquewhite;
+    background-color: rgb(255, 255, 255);
 }
 
-/* Galería de Imágenes */
-h2 {
+/* Estilo del Carrusel */
+.carousel {
+    flex: 1 1 50%; /* Ocupa la mitad del ancho disponible */
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden;
+}
+
+.carousel-imagenes {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    height: auto;
+}
+
+.carousel-imagenes img {
+    width: 100%;
+    height: auto;
+}
+
+button.prev,
+button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+button.prev {
+    left: 0;
+}
+
+button.next {
+    right: 0;
+}
+
+/* Estilo de las Secciones */
+section {
+    padding: 50px 20px;
     text-align: center;
-    font-size: 2em;
-    margin: 20px 0;
 }
 
 .portafolio-section {
@@ -264,58 +258,44 @@ div.text-gallery {
     color: #000;
 }
 
-/* Sección About */
-.about-section {
+/* Sección Sobre Nosotros */
+#sobre-nosotros {
     padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.sobre-nosotros-content {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    
+}
+
+.sobre-nosotros-text {
+
+    color: #000;
+    padding: 50px 20px;
     justify-content: center;
     align-items: center;
-    background-color: #9ca3af;
-    border: 2px solid #000; /* Línea alrededor del área de texto */
+    border: 2px solid #000;
+    margin: 35px;
 }
 
-.about-container {
-    display: flex;
-    max-width: 1200px;
-    width: 100%;
-}
-
-.about-video {
-    flex: 1;
-    padding-right: 20px;
+.sobre-nosotros-video iframe {
     max-width: 100%;
-    box-sizing: border-box;
-}
-
-.about-text {
-    flex: 1;
-    text-align: left;
-    border: 1px solid #000; /* Línea alrededor del área de texto */
-    padding: 20px;
-}
-
-.about-text h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.about-text p {
-    font-size: 1.2em;
-    text-align: justify;
+    height: auto;
 }
 
 /* Responsivo */
-@media (max-width: 768px) {
-    .about-container {
+@media (min-width: 768px) {
+    .sobre-nosotros-content {
         flex-direction: column;
-        align-items: center;
-    }
-
-    .about-video {
-        padding-right: 0;
-        margin-bottom: 20px;
     }
 }
+
 
 /* Sección Contacto */
 .contact {
@@ -410,22 +390,49 @@ footer a:hover {
     height: 40px;
 }
 
-/* Responsivo */
-@media (max-width: 600px) {
-    .nav-left, .nav-right {
+/* Estilo Responsivo */
+@media (max-width: 768px) {
+    .nav {
+        display: none;
         flex-direction: column;
-    }
-
-    .nav-left span, .nav-right span {
-        margin: 10px 0;
-    }
-
-    .gallery-item {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-
-    .contact-form {
         width: 100%;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav.open {
+        display: flex;
+    }
+
+    .hero-content {
+        flex-direction: column; /* Alinea los elementos en columna en pantallas pequeñas */
+    }
+
+    .carousel {
+        width: 100%; /* Ajuste la anchura del carrusel al 100% del contenedor */
+        margin: 0; /* Eliminar margen */
+    }
+
+    .hero-text {
+        margin-right: 0; /* Eliminar margen derecho */
+        margin-bottom: auto;
+        padding: 10px;
+        margin: 35px;
+    }
+
+    .gallery {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        width: calc(100% - 20px);
+    }
+
+    .carousel {
+        width: 100%; /* Ajuste la anchura del carrusel al 100% del contenedor */
     }
 }
