@@ -27,6 +27,90 @@ header {
     padding: 0 20px;
 }
 
+/* Botón del Menú */
+.menu-toggle {
+    display: none;
+    background-color: #000;
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.menu-toggle:focus {
+    outline: none;
+}
+
+/* Navegación */
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 100px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav.active {
+        display: block;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #000;
+    }
+
+    .nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    .nav ul li {
+        margin: 10px 0;
+    }
+}
+
+
 /* Rotador de Imágenes */
 .carousel {
     position: relative;
@@ -73,46 +157,6 @@ button.next {
 
 button:hover {
     background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Navegación */
-nav {
-    display: flex;
-    justify-content: center;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav ul li {
-    margin: 0 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-nav ul li a:hover {
-    background-color: #555;
-    color: white;
-}
-
-/* Logo */
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    height: 100px;
-    margin-right: 10px;
-    border-radius: 50%;
 }
 
 /* Sección Hero */

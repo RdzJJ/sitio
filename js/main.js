@@ -26,3 +26,12 @@ function prevImage() {
 document.addEventListener('DOMContentLoaded', () => {
     setInterval(nextImage, 5000); // Cambia la imagen cada 5 segundos
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+
+    menuToggle.addEventListener('click', function () {
+        nav.classList.toggle('active');
+    });
+});
