@@ -7,6 +7,10 @@
     <title>FotoClick</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="imagenes/logo1.jpg">
+    <!-- <script src="https://unpkg.com/i18next@latest/dist/umd/i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next-browser-languagedetector@latest/dist/umd/i18nextBrowserLanguageDetector.min.js"></script>
+    <script type="module" src="js/i18n.js" defer></script>
+    <script type="module" src="js/idioma.js"  defer></script> -->
 </head>
 
 <body>
@@ -21,11 +25,14 @@
             <div class="nav">
                 <nav>
                     <ul>
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#portafolio">Portafolio</a></li>
-                        <li><a href="#nosotros">Nosotros</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
-                        <li><a href="https://wa.me/3145203021">Redes</a></li>
+                        <li><a href="#inicio" id="inicio">Inicio</a></li>
+                        <li><a href="#portafolio" id="portfolio">Portafolio</a></li>
+                        <li><a href="#nosotros" id="about">Nosotros</a></li>
+                        <li><a href="#contacto" id="contact">Contacto</a></li>
+                        <li><a href="https://wa.me/3145203021" id="networks">Redes</a></li>
+                        |
+                        <li><a href="javascript:void(0);" id="en" id="btn_en">EN</a></li>
+                        <li><a href="javascript:void(0);" id="es" id="btn_es">ES</a></li>
                     </ul>
                 </nav>
             </div>
@@ -36,18 +43,18 @@
     <section id="inicio" class="hero">
         <div class="hero-content">
             <div class="hero-text">
-                <h1>Fotografía Profesional</h1>
-                <p>Bienvenidos a nuestro mundo a través del lente. Somos Julián y Mariana, y aquí encontrarás una
-                    colección de nuestros trabajos fotográficos más significativos. Capturamos momentos y emociones
-                    únicas, congelando fragmentos de tiempo para siempre. Explora nuestro portafolio y descubre la
-                    belleza en lo cotidiano y lo extraordinario.</p>
+                <h1 id="welcome">Fotografía Profesional</h1>
+                <p id="welcome-text">Bienvenidos a nuestro mundo a través del lente. Somos Julián y Mariana,
+                    y aquí encontrarás una colección de nuestros trabajos fotográficos más significativos. Capturamos
+                    momentos y emociones únicas, congelando fragmentos de tiempo para siempre. Explora nuestro
+                    portafolio y descubre la belleza en lo cotidiano y lo extraordinario.</p>
             </div>
             <div class="carousel">
                 <div class="carousel-imagenes">
                     <img src="imagenes/1920×1280/20240126_054733.jpg" alt="imagen 1">
                     <img src="imagenes/1920×1280/20240126_055403.jpg" alt="imagen 2">
                     <img src="imagenes/1920×1280/adventure-5077760_1920.jpg" alt="imagen 3">
-                    <img src="imagenes/IMG_1507.JPG" alt="imagen 4">
+                    <img src="imagenes/1920×1280/IMG_1507.JPG" alt="imagen 4">
                 </div>
                 <button class="prev" onclick="prevImage()">&lt;</button>
                 <button class="next" onclick="nextImage()">&gt;</button>
@@ -55,21 +62,16 @@
         </div>
     </section>
 
-    <!-- Línea Divisora
-    <div class="decorative-divider">
-        <hr class="divider">
-    </div> -->
-
     <!-- Sección del Portafolio -->
     <section id="portafolio" class="portfolio-section">
-        <h2>Portafolio</h2>
+        <h2 id="portafolio">Portafolio</h2>
         <div class="gallery-container">
             <div class="gallery">
                 <div class="photo-gallery">
                     <img src="imagenes/1920×2880/woman-8378634_1920.jpg" alt="">
                 </div>
                 <div class="text-gallery">
-                    <p>Retratos</p>
+                    <p id="portraits">Retratos</p>
                 </div>
             </div>
             <div class="gallery">
@@ -77,7 +79,7 @@
                     <img src="imagenes/1920×2880/lizard-7938887_1920.jpg" alt="">
                 </div>
                 <div class="text-gallery">
-                    <p>Naturaleza</p>
+                    <p id="nature">Naturaleza</p>
                 </div>
             </div>
             <div class="gallery">
@@ -85,7 +87,7 @@
                     <img src="imagenes/1920×2880/the-eiffel-tower-1744574_1920.jpg" alt="">
                 </div>
                 <div class="text-gallery">
-                    <p>Urbano</p>
+                    <p id="urban">Urbano</p>
                 </div>
             </div>
             <div class="gallery">
@@ -93,16 +95,11 @@
                     <img src="imagenes/1920×2880/chimney-5437407_1920.jpg" alt="">
                 </div>
                 <div class="text-gallery">
-                    <p>Experimental</p>
+                    <p id="experimental">Experimental</p>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Línea Divisora 
-    <div class="decorative-divider">
-        <hr class="divider">
-    </div> -->
 
     <!-- Sección Nosotros -->
     <section id="nosotros" class="about-section">
@@ -115,37 +112,32 @@
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <div class="about-text">
-                <h2>Sobre Nosotros</h2>
-                <p>Somos Julian y Mariana, apasionados por la fotografía. Cada imagen que capturamos es una ventana a
-                    nuestra perspectiva del mundo, reflejando nuestras experiencias y emociones. Nos especializamos en
-                    retratos, paisajes y fotografía urbana, siempre buscando contar historias y conectar con las
-                    personas a través de nuestras imágenes.</p>
+                <h2 id="about">Sobre Nosotros</h2>
+                <p id="about-text">Somos Julian y Mariana, apasionados por la fotografía. Cada imagen que
+                    capturamos es una ventana a nuestra perspectiva del mundo, reflejando nuestras experiencias y
+                    emociones. Nos especializamos en retratos, paisajes y fotografía urbana, siempre buscando contar
+                    historias y conectar con las personas a través de nuestras imágenes.</p>
             </div>
         </div>
     </section>
 
-    <!-- Línea Divisora 
-    <div class="decorative-divider">
-        <hr class="divider">
-    </div> -->
-
     <!-- Sección Contacto -->
     <section id="contacto" class="contact">
-        <h2>Contactos</h2>
+        <h2 id="contact">Contactos</h2>
         <form id="contactForm">
             <div>
-                <label for="name">Nombre:</label>
+                <label for="name" id="nameread">Nombre:</label>
                 <input class="input" type="text" id="name" name="name" required>
             </div>
             <div>
-                <label for="email">Correo:</label>
+                <label for="email" id="emailread">Correo:</label>
                 <input class="input" type="email" id="email" name="email" required>
             </div>
             <div>
-                <label for="message">Escriba un mensaje:</label>
+                <label for="message" id="messageread">Escriba un mensaje:</label>
                 <textarea class="input" id="message" name="message" required></textarea>
             </div>
-            <button class="bt_enviar" type="submit">Enviar</button>
+            <button class="bt_enviar" type="submit" id="submit">Enviar</button>
         </form>
     </section>
 
@@ -159,11 +151,10 @@
 
     <!-- Sección del Footer -->
     <footer>
-        <p>&copy; 2024 FotoClick. Todos los derechos reservados.</p>
+        <p id="footerd">&copy; 2024 FotoClick. Todos los derechos reservados.</p>
         <p><a href="#">Política de privacidad</a> | <a href="#">Términos y condiciones</a></p>
     </footer>
-
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
 </body>
 
 </html>

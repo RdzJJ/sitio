@@ -1,0 +1,20 @@
+export default{
+    "inicio": "Inicio",
+    "portafolio": "Portafolio",
+    "about": "Nosotros",
+    "contact": "Contacto",
+    "networks":"Redes",
+    "welcome": "Fotografía Profesional",
+    "welcome-text": "Bienvenidos a nuestro mundo a través del lente. Somos Julián y Mariana, y aquí encontrarás una colección de nuestros trabajos fotográficos más significativos. Capturamos momentos y emociones únicas, congelando fragmentos de tiempo para siempre. Explora nuestro portafolio y descubre la belleza en lo cotidiano y lo extraordinario.",
+    "portraits": "Retratos",
+    "nature": "Natural",
+    "urban": "Urbano",
+    "experimental": "Experimental",
+    "about2":"Sobre Nosotros",
+    "about-text": "Somos Julian y Mariana, apasionados por la fotografía. Cada imagen que capturamos es una ventana a nuestra perspectiva del mundo, reflejando nuestras experiencias y emociones. Nos especializamos en retratos, paisajes y fotografía urbana, siempre buscando contar historias y conectar con las personas a través de nuestras imágenes.",
+    "nameread": "Nombre:",
+    "emailread": "Correo:",
+    "messageread": "Escriba un mensaje:",
+    "submit": "Enviar",
+    "footerd": "2024 FotoClick. Todos los derechos reservados."
+};

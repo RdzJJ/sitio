@@ -1,0 +1,20 @@
+export default{
+    "inicio": "Home",
+    "portafolio": "Portfolio",
+    "about": "About",
+    "contact": "Contact",
+    "networks":"Redes",
+    "welcome": "Professional Photography",
+    "welcome-text": "Welcome to our world through the lens. We are Julián and Mariana, and here you will find a collection of our most significant photographic works. We capture unique moments and emotions, freezing fragments of time forever. Explore our portfolio and discover beauty in the ordinary and the extraordinary.",
+    "portraits": "Portraits",
+    "nature": "Nature",
+    "urban": "Urban",
+    "experimental": "Experimental",
+    "about2":"About",
+    "about-text": "We are Julian and Mariana, passionate about photography. Each image we capture is a window into our perspective on the world, reflecting our experiences and emotions. We specialize in portraits, landscapes, and urban photography, always seeking to tell stories and connect with people through our images.",
+    "nameread": "Name:",
+    "emailread": "Email:",
+    "messageread": "Write a message:",
+    "submit": "Send",
+    "footerd": "2024 PhotoClick. All rights reserved."
+};
