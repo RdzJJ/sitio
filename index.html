@@ -89,12 +89,13 @@
 
 
     <!-- Sección del Portafolio -->
+
     <section id="portafolio" class="portfolio-section">
         <h2 id="portafolio">Portafolio</h2>
         <div class="gallery-container">
             <div class="gallery">
                 <div class="photo-gallery">
-                    <img src="imagenes/1920×2880/woman-8378634_1920.jpg" alt="">
+                    <img src="imagenes/1920×2880/woman-8378634_1920.jpg" alt="" onclick="openModal(this)">
                 </div>
                 <div class="text-gallery">
                     <p id="portraits">Retratos</p>
@@ -102,7 +103,7 @@
             </div>
             <div class="gallery">
                 <div class="photo-gallery">
-                    <img src="imagenes/1920×2880/lizard-7938887_1920.jpg" alt="">
+                    <img src="imagenes/1920×2880/lizard-7938887_1920.jpg" alt="" onclick="openModal(this)">
                 </div>
                 <div class="text-gallery">
                     <p id="nature">Naturaleza</p>
@@ -110,7 +111,7 @@
             </div>
             <div class="gallery">
                 <div class="photo-gallery">
-                    <img src="imagenes/1920×2880/the-eiffel-tower-1744574_1920.jpg" alt="">
+                    <img src="imagenes/1920×2880/the-eiffel-tower-1744574_1920.jpg" alt="" onclick="openModal(this)">
                 </div>
                 <div class="text-gallery">
                     <p id="urban">Urbano</p>
@@ -118,7 +119,7 @@
             </div>
             <div class="gallery">
                 <div class="photo-gallery">
-                    <img src="imagenes/1920×2880/chimney-5437407_1920.jpg" alt="">
+                    <img src="imagenes/1920×2880/chimney-5437407_1920.jpg" alt="" onclick="openModal(this)">
                 </div>
                 <div class="text-gallery">
                     <p id="experimental">Experimental</p>
@@ -126,6 +127,16 @@
             </div>
         </div>
     </section>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+      <!--  <span class="close" onclick="closeModal()">&times;</span> -->
+        <div class="modal-content">
+            <img class="modal-img" id="modalImage">
+            <a class="prev" onclick="changeImage(1)">&#10094;</a>
+            <a class="next" onclick="changeImage(1)">&#10095;</a>
+        </div>
+    </div>
 
     <!-- Sección Sobre Nosotros -->
     <section id="sobre-nosotros">

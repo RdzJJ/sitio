@@ -1,52 +1,59 @@
-let currentIndex = 0;
-const images = document.querySelectorAll('.carousel-imagenes img');
-const totalImages = images.length;
+// JavaScript para el carrusel de imágenes
+let currentImageIndex = 0;
+const carouselImages = document.querySelectorAll('.carousel-imagenes img');
 
 function showImage(index) {
-    const carouselImages = document.querySelector('.carousel-imagenes');
-    if (index >= totalImages) {
-        currentIndex = 0;
-    } else if (index < 0) {
-        currentIndex = totalImages - 1;
-    } else {
-        currentIndex = index;
-    }
-    const offset = -currentIndex * 100;
-    carouselImages.style.transform = `translateX(${offset}%)`;
+    carouselImages.forEach((img, i) => {
+        img.style.display = (i === index) ? 'block' : 'none';
+    });
 }
 
 function nextImage() {
-    showImage(currentIndex + 1);
+    currentImageIndex = (currentImageIndex + 1) % carouselImages.length;
+    showImage(currentImageIndex);
 }
 
 function prevImage() {
-    showImage(currentIndex - 1);
+    currentImageIndex = (currentImageIndex - 1 + carouselImages.length) % carouselImages.length;
+    showImage(currentImageIndex);
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    setInterval(nextImage, 5000); // Cambia la imagen cada 5 segundos
+// Muestra la primera imagen inicialmente
+showImage(currentImageIndex);
+
+// JavaScript para el modal
+let modal = document.getElementById("myModal");
+let modalImg = document.getElementById("modalImage");
+let images = document.querySelectorAll('.photo-gallery img');
+let currentModalIndex = 0;
+
+function openModal(imgElement) {
+    modal.style.display = "block";
+    modalImg.src = imgElement.src;
+    currentModalIndex = Array.from(images).indexOf(imgElement);
+}
+
+function closeModal() {
+    modal.style.display = "none";
+}
+
+function changeImage(step) {
+    currentModalIndex = (currentModalIndex + step + images.length) % images.length;
+    modalImg.src = images[currentModalIndex].src;
+}
+
+// Añadir eventos a las imágenes de la galería
+images.forEach(img => {
+    img.addEventListener('click', () => openModal(img));
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('.nav');
+// Añadir eventos de navegación del modal
+document.querySelector('.prev').addEventListener('click', () => changeImage(-1));
+document.querySelector('.next').addEventListener('click', () => changeImage(1));
 
-    menuToggle.addEventListener('click', function () {
-        nav.classList.toggle('active');
-    });
+// Cerrar el modal al hacer clic fuera de la imagen
+modal.addEventListener('click', (event) => {
+    if (event.target === modal) {
+        closeModal();
+    }
 });
-
-//Evento Formulario
-document.getElementById("contactForm").addEventListener("submit", function(event){
-    event.preventDefault(); // Evita que el formulario se envíe de manera tradicional
-
-    // Muestra el mensaje de éxito usando SweetAlert
-    swal("Enviado con éxito", "Tu mensaje ha sido enviado correctamente.", "success");
-
-    // Borra los campos del formulario
-    document.getElementById("name").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("message").value = "";
-});
-
-
