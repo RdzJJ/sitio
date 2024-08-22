@@ -83,6 +83,8 @@ nav ul li a:hover {
     border-radius: 50%;
 }
 
+
+
 /* Responsivo */
 @media (max-width: 768px) {
     .nav {
