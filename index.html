@@ -15,11 +15,19 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="imagenes/logo1.jpg">
 
+    <div id="google_translate_element" style="display:none;"></div>
+
     <script type="text/javascript">
         function googleTranslateElementInit() {
-            new google.translate.TranslateElement({ pageLanguage: 'es', includedLanguages: 'en, es'}, 'google_translate_element');
+            new google.translate.TranslateElement({ pageLanguage: 'es', includedLanguages: 'en,es' }, 'google_translate_element');
         }
     </script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
     <script src="dist/bundle.js" defer></script>
 
     <!-- Incluye SweetAlert CSS -->
@@ -52,13 +60,35 @@
                         <li><a href="#contacto" id="contact">Contacto</a></li>
                         <li><a href="https://wa.me/3145203021" id="networks">Redes</a></li>
                         <li><a href="" id="login">Registrarse</a></li>
-                        <button class="dark-mode-toggle">Dark Mode</button>
-                        <li><div id="google_translate_element" class="google"></div></li>
+                        <!-- <button class="dark-mode-toggle">Dark Mode</button>-->
+                        <img id="translateButton" src="/imagenes/icons/traductor.png" alt="Cambiar Idioma"
+                            style="cursor:pointer;">
+                        <div id="google_translate_element" style="display:none;"></div>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
+    <script>
+        document.getElementById('translateButton').addEventListener('click', function () {
+            const googleTranslateCombo = document.querySelector('.goog-te-combo');
+            const currentLang = googleTranslateCombo.value;
+            const newLang = currentLang === 'es' ? 'en' : 'es';
+
+            // Forzar el cambio de idioma
+            googleTranslateCombo.value = newLang;
+            googleTranslateCombo.dispatchEvent(new Event('change'));
+
+            // Esperar a que Google Translate procese el cambio antes de forzar un segundo cambio si es necesario
+            setTimeout(() => {
+                if (googleTranslateCombo.value !== newLang) {
+                    googleTranslateCombo.value = newLang;
+                    googleTranslateCombo.dispatchEvent(new Event('change'));
+                }
+            }, 100);
+        });
+    </script>
+
 
     <!-- Sección de Inicio -->
     <section id="inicio" class="hero">
@@ -130,8 +160,8 @@
         <a class="prev" id="prevModal">&lt;</a>
         <a class="next" id="nextModal">&gt;</a>
     </div>
-    
-    
+
+
     <!-- Sección Sobre Nosotros -->
     <section id="sobre-nosotros">
         <div class="sobre-nosotros-content">
@@ -170,40 +200,40 @@
             <button class="bt_enviar" type="submit" id="submit">Enviar</button>
         </form>
     </section>
-    
+
     <script>
-    document.getElementById("contactForm").addEventListener("submit", function(event) {
-        event.preventDefault(); // Evita que el formulario se envíe de manera tradicional
-    
-        const form = event.target;
-        const formData = new FormData(form);
-    
-        fetch(form.action, {
-            method: form.method,
-            body: formData,
-            headers: {
-                'Accept': 'application/json'
-            }
-        }).then(response => {
-            if (response.ok) {
-                // Aquí puedes agregar tu lógica de animación para un envío exitoso
-                form.reset(); // Resetea el formulario
-            } else {
-                response.json().then(data => {
-                    if (Object.hasOwn(data, 'errors')) {
-                        // Aquí puedes agregar tu lógica de animación para errores en la respuesta
-                    } else {
-                        // Aquí puedes agregar tu lógica de animación para cualquier otro problema
-                    }
-                })
-            }
-        }).catch(error => {
-            // Aquí puedes agregar tu lógica de animación para manejar errores de red u otros problemas
+        document.getElementById("contactForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Evita que el formulario se envíe de manera tradicional
+
+            const form = event.target;
+            const formData = new FormData(form);
+
+            fetch(form.action, {
+                method: form.method,
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    // Aquí puedes agregar tu lógica de animación para un envío exitoso
+                    form.reset(); // Resetea el formulario
+                } else {
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            // Aquí puedes agregar tu lógica de animación para errores en la respuesta
+                        } else {
+                            // Aquí puedes agregar tu lógica de animación para cualquier otro problema
+                        }
+                    })
+                }
+            }).catch(error => {
+                // Aquí puedes agregar tu lógica de animación para manejar errores de red u otros problemas
+            });
         });
-    });
     </script>
-    
-    
+
+
     <!-- Botón de WhatsApp -->
     <div id="menu_redes">
         <a class="whatsapp" aria-label="Chat on WhatsApp" href="https://wa.me/3145203021">
@@ -217,12 +247,12 @@
         <p id="footerd">&copy; 2024 FotoClick. Todos los derechos reservados.</p>
         <p><a href="#">Política de privacidad</a> | <a href="#">Términos y condiciones</a></p>
     </footer>
-        <!-- Incluir los módulos JS -->
-        <script type="module" src="carousel.js"></script>
-        <script type="module" src="menu.js"></script>
-        <script type="module" src="form.js"></script>
-        <script type="module" src="gallery.js"></script>
-        <script type="module" src="darkmode.js"></script>
+    <!-- Incluir los módulos JS -->
+    <script type="module" src="carousel.js"></script>
+    <script type="module" src="menu.js"></script>
+    <script type="module" src="form.js"></script>
+    <script type="module" src="gallery.js"></script>
+    <script type="module" src="darkmode.js"></script>
 
 </body>
 

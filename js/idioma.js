@@ -33,9 +33,9 @@ function updateContent() {
   document.getElementById("urban").innerText = i18next.t("urban");
   document.getElementById("experimental").innerText = i18next.t("experimental");
   document.getElementById("about-text").innerText = i18next.t("about-text");
-  document.getElementById("nameread").innerText = i18next.t("nameread");
-  document.getElementById("emailread").innerText = i18next.t("emailread");
-  document.getElementById("messageread").innerText = i18next.t("messageread");
-  document.getElementById("submit").innerText = i18next.t("submit");
+  document.getElementById("nameread").innerText = i18next.t("name");
+  document.getElementById("emailread").innerText = i18next.t("email");
+  document.getElementById("messageread").innerText = i18next.t("message");
+  document.getElementById("submit").innerText = i18next.t("send");
   document.getElementById("footerd").innerText = i18next.t("footerd");
 }
