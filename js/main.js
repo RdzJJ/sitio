@@ -1,3 +1,4 @@
+// Carrusel
 let currentIndex = 0;
 const images = document.querySelectorAll('.carousel-imagenes img');
 const totalImages = images.length;
@@ -27,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(nextImage, 5000); // Cambia la imagen cada 5 segundos
 });
 
+// Menu
 document.addEventListener('DOMContentLoaded', function () {
     const menuToggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.nav');
@@ -36,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-//Evento Formulario
+//Formulario
 document.getElementById("contactForm").addEventListener("submit", function(event){
     event.preventDefault(); // Evita que el formulario se envíe de manera tradicional
 
@@ -49,6 +51,7 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     document.getElementById("message").value = "";
 });
 
+// Galeria
 document.addEventListener('DOMContentLoaded', function () {
     const modal = document.getElementById("galleryModal");
     const modalImg = document.getElementById("modalImage");
