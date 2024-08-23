@@ -50,6 +50,18 @@
                 <h1>FotoClick</h1>
             </div>
             <button class="menu-toggle" aria-label="Open Menu">☰</button>
+
+            <script>// Menu
+                document.addEventListener('DOMContentLoaded', function () {
+                    const menuToggle = document.querySelector('.menu-toggle');
+                    const nav = document.querySelector('.nav');
+                
+                    menuToggle.addEventListener('click', function () {
+                        nav.classList.toggle('active');
+                    });
+                });
+                </script>
+
             <div class="nav">
                 <nav>
                     <ul class="nav-links">
