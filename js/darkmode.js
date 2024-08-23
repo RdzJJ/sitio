@@ -1,19 +1,11 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const darkModeToggle = document.querySelector('.dark-mode-toggle img'); // Selecciona el ícono de la luna
-    const themeLink = document.getElementById('theme-style');
+var icon = document.getElementById("icon");
 
-    // Cargar el tema preferido desde localStorage
-    const currentTheme = localStorage.getItem('theme');
-    if (currentTheme) {
-        themeLink.setAttribute('href', currentTheme);
+icon.onclick = function(){
+    document.body.classList.toggle("dark-theme");
+
+    if(document.body.classList.contains("dark-theme")){
+       icon.src = "imagenes/icons/sol-linea.png";
     } else {
-        themeLink.setAttribute('href', 'css/main.css'); // Establece el light mode por defecto
+        icon.src = "imagenes/icons/luna-linea.png";
     }
-
-    darkModeToggle.addEventListener('click', () => {
-        const currentTheme = themeLink.getAttribute('href');
-        const newTheme = currentTheme === 'css/main.css' ? 'css/main.dark.css' : 'css/main.css';
-        themeLink.setAttribute('href', newTheme);
-        localStorage.setItem('theme', newTheme); // Guarda el tema seleccionado en localStorage
-    });
-});
+}

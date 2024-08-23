@@ -94,17 +94,23 @@ nav ul li a:hover {
 
 
 :root {
-    --primary-color: black;
+    --primary-color: white;
+    --secondary-color: Black;
+    --third-color:#ccc;
+}
+
+.dark-theme{
+    --primary-color: Black;
     --secondary-color: white;
     --third-color:#ccc;
 }
 
 #icon {
     width: auto;
-    height: 43px;
+    height: 50px;
     cursor: pointer;
     position: relative;
-    top: -12px;
+    top: -16px;
 }
 
 
@@ -591,7 +597,7 @@ footer a:hover {
         }
 
         #icon {
-            top: -20px;
+            top: -15px;
         }
 
     }
