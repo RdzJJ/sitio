@@ -522,6 +522,12 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+/* .main_Container{
+    margin-bottom:100vh;
+} */
+.registerContainer, .register_User, .register_Pass, .register_Firstname, .register_Lastname {
+    margin-bottom: 1rem;
+}
 
 /* Estilos para el Botón de WhatsApp */
 #menu_redes {
