@@ -1,4 +1,4 @@
-# (imagenes/logo1.jpg) ![FotoClick]
+# ![FotoClick](imagenes/logo1.jpg)  FotoClick
 
 ## Descripción
 
