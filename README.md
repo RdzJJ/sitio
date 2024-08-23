@@ -1,6 +1,3 @@
-¡Claro! Aquí tienes el archivo `README.md` completo con todos los detalles para la instalación e implementación de PostCSS y Webpack, así como la información adicional:
-
-```markdown
 # 📷FotoClick
 <img src="imagenes/logo1.jpg" alt="Logo FotoClick" width="100px">
 
