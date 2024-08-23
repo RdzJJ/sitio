@@ -1,5 +1,5 @@
-# ![FotoClick](imagenes/logo1.jpg)  FotoClick
-
+# FotoClick
+<img src="imagenes/logo1.jpg" alt="Logo FotoClick" width="50px">
 ## Descripción
 
 Bienvenidos a nuestro mundo a través del lente. Somos Julián y Mariana, y aquí encontrarás una colección de nuestros trabajos fotográficos más significativos. Capturamos momentos y emociones únicas, congelando fragmentos de tiempo para siempre. Explora nuestro portafolio y descubre la belleza en lo cotidiano y lo extraordinario.
