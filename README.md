@@ -169,6 +169,3 @@ Puedes ponerte en contacto con nosotros a través de los siguientes medios:
 
 - **Julián**: [julian.rodriguezj@upb.edu.co](mailto:julian.rodriguezj@upb.edu.co)
 - **Mariana**: [mariana.osorioro@upb.edu.co](mailto:mariana.osorioro@upb.edu.co)
-```
-
-Este archivo `README.md` proporciona una guía completa sobre la instalación, configuración y uso de PostCSS y Webpack, así como detalles adicionales sobre el proyecto.
