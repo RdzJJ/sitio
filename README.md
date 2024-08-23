@@ -1,16 +1,16 @@
-# FotoClick
-<img src="imagenes/logo1.jpg" alt="Logo FotoClick" width="50px">
-## Descripción
+# 📷FotoClick
+<img src="imagenes/logo1.jpg" alt="Logo FotoClick" width="100px">
 
+## 📎Descripción
 Bienvenidos a nuestro mundo a través del lente. Somos Julián y Mariana, y aquí encontrarás una colección de nuestros trabajos fotográficos más significativos. Capturamos momentos y emociones únicas, congelando fragmentos de tiempo para siempre. Explora nuestro portafolio y descubre la belleza en lo cotidiano y lo extraordinario.
 
-## Características
+## 🧏Características
 
 - **Portafolio de Fotografías**: Una selección curada de nuestros trabajos más destacados.
 - **Categorías Variadas**: Fotografía de retratos, paisajes, eventos y más.
 - **Galería Interactiva**: Navega a través de nuestras imágenes con una interfaz intuitiva.
 
-## Instalación
+## ❗Instalación
 
 Para visualizar nuestro portafolio, sigue estos pasos:
 
@@ -20,13 +20,13 @@ Para visualizar nuestro portafolio, sigue estos pasos:
 
 **Nota:** No se requieren instalaciones adicionales para la visualización básica.
 
-## Uso
+## 🧠😎 Uso
 
 Abre el archivo `index.html` en tu navegador para explorar nuestro portafolio. Puedes hacer clic en las imágenes para verlas en tamaño completo y navegar entre las diferentes categorías.
 
 Puedes visitar el sitio online a través del siguiente link: 'https://rdzjj.github.io/sitio/#'
 
-## Contribución
+## 🖥️🖱️ Contribución
 
 Si deseas contribuir o hacer sugerencias, por favor, sigue estos pasos:
 
@@ -35,7 +35,7 @@ Si deseas contribuir o hacer sugerencias, por favor, sigue estos pasos:
 3. Realiza tus cambios y haz commit.
 4. Envía un pull request para que podamos revisar tus contribuciones.
 
-## Contacto
+## 🤳📲 Contacto
 
 Puedes ponerte en contacto con nosotros a través de los siguientes medios:
 
