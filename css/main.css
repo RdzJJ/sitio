@@ -11,9 +11,10 @@ body {
     height: auto;
     cursor: pointer;
     position: relative;
-    top: -16px; /* Ajusta este valor según sea necesario */
-  }
-  
+    top: -16px;
+    /* Ajusta este valor según sea necesario */
+}
+
 
 /* Estilo del Header */
 header {
@@ -42,6 +43,7 @@ header {
     background-color: #000;
     color: white;
     border: none;
+    height: 50px;
     font-size: 24px;
     cursor: pointer;
 }
@@ -90,6 +92,14 @@ nav ul li a:hover {
     border-radius: 50%;
 }
 
+#icon {
+    width: 50px; 
+    height: auto; 
+    cursor: pointer;
+    position: relative;
+    top: -16px;
+}
+
 
 
 /* Responsivo */
@@ -105,9 +115,10 @@ nav ul li a:hover {
     .nav.active {
         display: block;
         position: absolute;
-        top: 70px;
+        top: 90px;
         left: 0;
         width: 100%;
+        height: auto;
         background-color: #000;
     }
 
@@ -131,7 +142,8 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     min-height: 400px;
-    border: 2px solid #000; /* Línea alrededor del área de texto */
+    border: 2px solid #000;
+    /* Línea alrededor del área de texto */
 }
 
 .hero-content {
@@ -146,14 +158,16 @@ nav ul li a:hover {
     max-width: 45%;
     text-align: center;
     margin-right: 30px;
-    border: 1px solid #000; /* Línea alrededor del área de texto */
+    border: 1px solid #000;
+    /* Línea alrededor del área de texto */
     padding: 20px;
     background-color: rgb(255, 255, 255);
 }
 
 /* Estilo del Carrusel */
 .carousel {
-    flex: 1 1 50%; /* Ocupa la mitad del ancho disponible */
+    flex: 1 1 50%;
+    /* Ocupa la mitad del ancho disponible */
     position: relative;
     width: 80%;
     max-width: 800px;
@@ -202,7 +216,8 @@ section {
 .portafolio-section {
     background-image: url(https://images.adsttc.com/media/images/5d44/14fa/284d/d1fd/3a00/003d/large_jpg/eiffel-tower-in-paris-151-medium.jpg?1564742900);
     padding: 50px 20px;
-    border: 2px solid #000; /* Línea alrededor del área de texto */
+    border: 2px solid #000;
+    /* Línea alrededor del área de texto */
 }
 
 .gallery-container {
@@ -213,7 +228,7 @@ section {
 
 div.gallery {
     margin: 10px;
-    box-shadow: 0 4px 8px 0 rgb(107, 118, 125), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 4px 8px 0 rgb(107, 118, 125), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 250px;
     transition: transform 0.3s;
 }
@@ -232,23 +247,33 @@ div.text-gallery {
     text-align: center;
     padding: 10px;
     font-size: 1em;
-    border: 1px solid #000; /* Línea alrededor del área de texto */
+    border: 1px solid #000;
+    /* Línea alrededor del área de texto */
 }
 
 
 /* Gallery Modal Styles */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
 }
 
 .modal-content {
@@ -258,7 +283,8 @@ div.text-gallery {
     max-width: 700px;
 }
 
-.modal-content, .modal img {
+.modal-content,
+.modal img {
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
@@ -266,13 +292,23 @@ div.text-gallery {
 }
 
 @-webkit-keyframes zoom {
-    from {-webkit-transform: scale(0)}
-    to {-webkit-transform: scale(1)}
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
 }
 
 @keyframes zoom {
-    from {transform: scale(0)}
-    to {transform: scale(1)}
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
 }
 
 .close {
@@ -292,7 +328,8 @@ div.text-gallery {
     cursor: pointer;
 }
 
-.prev, .next {
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 60%;
@@ -317,8 +354,9 @@ div.text-gallery {
     border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 
@@ -345,7 +383,8 @@ div.text-gallery {
 }
 
 .decorative-divider hr.divider:before {
-    content: "\2766"; /* Símbolo de corazón */
+    content: "\2766";
+    /* Símbolo de corazón */
     font-size: 24px;
     position: absolute;
     top: -12px;
@@ -369,7 +408,7 @@ div.text-gallery {
     align-items: center;
     max-width: 1200px;
     margin: auto;
-    
+
 }
 
 .sobre-nosotros-text {
@@ -400,7 +439,8 @@ div.text-gallery {
     background-color: #ffffff;
     padding: 50px 20px;
     text-align: center;
-    border: 2px solid #000; /* Línea alrededor del área de texto */
+    border: 2px solid #000;
+    /* Línea alrededor del área de texto */
 }
 
 .contact h2 {
@@ -426,7 +466,8 @@ form label {
     margin-bottom: 5px;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -505,16 +546,20 @@ footer a:hover {
     }
 
     .hero-content {
-        flex-direction: column; /* Alinea los elementos en columna en pantallas pequeñas */
+        flex-direction: column;
+        /* Alinea los elementos en columna en pantallas pequeñas */
     }
 
     .carousel {
-        width: 100%; /* Ajuste la anchura del carrusel al 100% del contenedor */
-        margin: 0; /* Eliminar margen */
+        width: 100%;
+        /* Ajuste la anchura del carrusel al 100% del contenedor */
+        margin: 0;
+        /* Eliminar margen */
     }
 
     .hero-text {
-        margin-right: 0; /* Eliminar margen derecho */
+        margin-right: 0;
+        /* Eliminar margen derecho */
         margin-bottom: auto;
         padding: 10px;
         margin: 35px;
@@ -523,6 +568,24 @@ footer a:hover {
     .gallery {
         width: calc(50% - 20px);
     }
+
+    @media (max-width: 768px) {
+        /* Otros estilos responsive existentes */
+    
+        nav ul li {
+            margin: 20px 0; 
+        }
+    
+        #translateButton {
+            margin-top: 20px;
+            margin-right: 20px; 
+        }
+    
+        #icon {
+            margin-left: 20px; 
+        }
+    }
+    
 }
 
 @media (max-width: 480px) {
@@ -531,6 +594,7 @@ footer a:hover {
     }
 
     .carousel {
-        width: 100%; /* Ajuste la anchura del carrusel al 100% del contenedor */
+        width: 100%;
+        /* Ajuste la anchura del carrusel al 100% del contenedor */
     }
 }
